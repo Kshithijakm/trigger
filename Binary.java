@@ -5,20 +5,22 @@ class Binary{
     int target=4;
     int low=0;
     int high=n-1;
-    while(low<=high){
-      int mid=(low+high)/2;
-      for(int i=0;i<n;i++){
-        if(arr[mid]==target){
-          System.out.println("target found");
+    for(int i=0;i<n;i++){
+      while(low<=high){
+        int mid=(low+high)/2;
+        for(int i=0;i<n;i++){
+          if(arr[mid]==target){
+            System.out.println("target found");
+          }
+          else if(target<arr[mid]){
+            low++;
+          }
+          else{
+            high--;
+          }
         }
-        else if(target<arr[mid]){
-          low++;
-        }
-        else{
-          high--;
-        }
+        System.out.println("not found");
       }
-      System.out.println("not found");
     }
   }
 }
