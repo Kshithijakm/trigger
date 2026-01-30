@@ -11,6 +11,7 @@ class Binary{
         int mid=(low+high)/2;
         if(arr[mid]==target){
           flag=1;
+          break;
         }
         else if(target<arr[mid]){
           low++;
