@@ -8,19 +8,18 @@ class Binary{
     for(int i=0;i<n;i++){
       while(low<=high){
         int mid=(low+high)/2;
-        for(int i=0;i<n;i++){
-          if(arr[mid]==target){
-            System.out.println("target found");
-          }
-          else if(target<arr[mid]){
-            low++;
-          }
-          else{
-            high--;
-          }
+        if(arr[mid]==target){
+          System.out.println("target found");
         }
-        System.out.println("not found");
+        else if(target<arr[mid]){
+          low++;
+        }
+        else{
+            high--;
+        }
       }
+      System.out.println("not found");
     }
   }
 }
+
