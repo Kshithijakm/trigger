@@ -18,8 +18,9 @@ class Binary{
             high--;
         }
       }
-      System.out.println("not found");
+      
     }
+    System.out.println("not found");
   }
 }
 
