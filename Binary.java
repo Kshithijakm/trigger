@@ -14,7 +14,7 @@ class Binary{
         }
         else if(target<arr[mid]){
           low++;
-          mid++;
+          mid--;
         }
         else{
             high--;
